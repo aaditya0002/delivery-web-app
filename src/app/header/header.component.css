@@ -1,0 +1,39 @@
+.cont-1 {
+    height: 10vh;
+    background-color: #045D5D;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+}
+.btn-1{
+    color:wheat;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 7px;
+    background-color: black;
+}
+.btn-1:hover{
+    transform: scale(1.1px);
+    color: white;
+}
+.btn-1 {
+    transition: transform 0.1s ease; /* smooth transition */
+}
+.logo{
+    margin-left:1vw;
+}
+.roww {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* space around elements */
+}
+.navs {
+    transition: transform 0.1s ease; /* smooth transition */
+}
+
+.navs:hover {
+    color: wheat;
+    cursor: pointer;
+    transform: scale(1.2); /* scale up on hover */
+}

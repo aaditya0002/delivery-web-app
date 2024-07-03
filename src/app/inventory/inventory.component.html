@@ -1,0 +1,35 @@
+<div class="search"></div>
+<div class="table-1">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Damaged Status</th>
+                <th>Perishable</th>
+                <th>Expiry Date</th>
+                <th>Quantity</th>
+                <th>Action</th>
+              </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let item of products">
+                <tr>
+                  <td>{{ item.id }}</td>
+                  <td>{{ item.name }}</td>
+                  <td>{{ item.category }}</td>
+                  <td>{{ item.damaged ? 'Damaged' : 'Not Damaged' }}</td>
+                  <td>{{ item.perishable ? 'Yes' : 'No' }}</td>
+                  <td>{{ item.expiryDate ? item.expiryDate : '-' }}</td>
+                  <td>{{ item.quantity }}</td>
+                  <td class="text-center buttons-1">
+                    
+                    <button (click)="editItem()" class="btns edit-btn">Edit</button>
+                    <button (click)="deleteItem()" class="btns delete-btn">Delete</button>
+                  </td>
+                </tr>
+              </ng-container>
+        </tbody>
+    </table>
+</div>
